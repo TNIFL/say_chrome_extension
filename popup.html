@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>착하게 말해요 · 확장</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C4 4.12 5.34 3 7 3h10c1.66 0 3 1.12 3 2.5v7c0 1.38-1.34 2.5-3 2.5H11l-3.6 3.1c-.52.45-1.4.09-1.4-.55V15H7c-1.66 0-3-1.12-3-2.5v-7Z"/></svg>
+        </span>
+        <span class="brand-title">착하게 말해요</span>
+      </a>
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+    </header>
+
+    <section class="card">
+      <h3>입력</h3>
+      <p class="small hint">전달할 문장을 아래에 입력하세요.</p>
+      <textarea id="input_text" placeholder="예) 왜 이렇게 늦게 보내세요? 다음부턴 제때 보내세요."></textarea>
+    </section>
+
+    <section class="card">
+      <h3>카테고리 & 말투</h3>
+      <div class="row">
+        <div>
+          <label class="small" for="category">카테고리</label>
+          <select id="category">
+            <option value="general">일반</option>
+            <option value="work">업무</option>
+            <option value="support">고객응대</option>
+            <option value="community">커뮤니티</option>
+            <option value="apology">사과</option>
+            <option value="inquiry">문의</option>
+            <option value="thanks">감사</option>
+            <option value="request">요청</option>
+            <option value="guidence">안내</option>
+            <option value="report/approval">보고/결재</option>
+            <option value="feedback">피드백</option>
+          </select>
+        </div>
+        <div>
+          <label class="small" for="tone">말투</label>
+          <select id="tone">
+            <option value="soft">부드럽게</option>
+            <option value="polite">정중하게</option>
+            <option value="concise">간결하게</option>
+            <option value="report">보고서체</option>
+            <option value="friendly">친근하게</option>
+            <option value="warmly">따듯하게</option>
+            <option value="calmly">차분하게</option>
+            <option value="formally">격식있게</option>
+            <option value="clearly">명확하게</option>
+            <option value="without_emotion">감정 없이(중립)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="checkbox" id="honorific" checked>
+          <span>존댓말 유지</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="opener">
+          <span>완충문·인사 추가</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="emoji">
+          <span>이모지 허용 🙂</span>
+        </label>
+      </div>
+
+      <div class="toolbar" style="margin-top:8px;">
+        <span class="small">※ 팝업은 간략형입니다. 상세 칩 UI는 웹앱에서 계속 사용.</span>
+        <span class="small"><link rel="https://say-production.up.railway.app/" /></span>
+        <span class="spacer"></span>
+        <button id="run" class="btn">번역하기</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>출력</h3>
+      <div id="output" class="output">여기에 결과가 표시됩니다.</div>
+      <div class="toolbar" style="margin-top:8px;">
+        <span class="small">원하는 결과가 나오지 않을수도 있습니다.</span>
+        <button id="copy" class="btn secondary">복사</button>
+      </div>
+      <div class="small" id="status" style="margin-top:6px; opacity:.85;"></div>
+      <!--
+      <div class="checkbox-group" style="margin-top:6px;">
+        <label class="checkbox-item">
+          <input type="checkbox" id="consent">
+          <span>입력 문장 전송에 동의합니다.</span>
+        </label>
+      </div>
+      -->
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
