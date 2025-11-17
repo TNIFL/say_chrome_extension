@@ -1,32 +1,30 @@
 {
   "manifest_version": 3,
-  "name": "착하게 말해요",
+  "name": "Lexinoa 문장 순화 도우미",
+  "description": "Lexinoa 웹 서비스와 연동되는 문장 순화 / 상황별 말투 도우미 확장 프로그램입니다.",
   "version": "1.0.0",
-  "description": "문장을 부드럽게 순화해주는 AI 비서",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage",
-    "contextMenus",
-    "tabs"
-  ],
-  "host_permissions": [
-    "https://say-production.up.railway.app/*"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
+    "default_title": "Lexinoa"
   },
+
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  }
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://www.lexinoa.com/*",
+    "http://127.0.0.1:5000/*",
+    "http://localhost:5000/*"
+  ]
 }
