@@ -227,6 +227,19 @@
 
       <!-- 설정 탭 -->
       <section id="view-settings" class="view">
+        <div class="card" style="margin-bottom:10px;">
+          <div style="display:flex; align-items:center; gap:8px; justify-content:space-between;">
+            <div>
+              <div style="font-weight:700;">계정 연결</div>
+              <div class="muted" id="connStatus" style="font-size:12px;">연결 상태 확인 중…</div>
+            </div>
+            <div style="display:flex; gap:6px;">
+              <button class="btn small" id="btnConnect">연결</button>
+              <button class="btn ghost small" id="btnDisconnect">해제</button>
+            </div>
+          </div>
+        </div>
+
         <div class="card">
           <h3 class="section-title">로그인 상태</h3>
           <div id="settings-auth" class="info-text">
@@ -254,7 +267,7 @@
           </div>
         </div>
 
-
+        <!-- 운영 환경 설정 (배포 시 주석 또는 제거) -->
         <div class="card">
           <h3 class="section-title">연결 대상 서버</h3>
           <div class="radio-group">

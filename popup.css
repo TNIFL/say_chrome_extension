@@ -610,6 +610,45 @@ body.theme-light .btn.ghost:hover {
   line-height: 1.4;
   margin-top: 6px;
 }
+/* 기본: 글자 단위로 쪼개지는 줄바꿈 방지 */
+body, .tpl-item, .tpl-meta, .history-body, .info-text, .field-label {
+  word-break: keep-all;          /* 한글 글자 쪼개기 방지 */
+  overflow-wrap: break-word;     /* 너무 긴 영어/URL만 적당히 줄바꿈 */
+}
+
+
+/* 선택된 "드래그 기본값" 템플릿 강조 */
+.tpl-item.is-selection-default {
+  border: 2px solid rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.06);
+}
+
+.theme-dark .tpl-item.is-selection-default {
+  border: 2px solid rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.08);
+}
+
+/* 선택된 "드래그 기본값" 템플릿 강조 */
+.tpl-item.is-selection-default {
+  border: 2px solid rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .tpl-item.is-selection-default {
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* 선택된 항목 상단 라벨(선택 사항) */
+.tpl-item.is-selection-default .tpl-header::before {
+  content: "드래그 기본값";
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+  opacity: 0.9;
+}
+
 
 /* 시각적 구분선 */
 .tpl-meta::before {
