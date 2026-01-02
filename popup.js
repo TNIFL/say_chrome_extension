@@ -415,7 +415,8 @@ function bindActions() {
 // ----------------------
 // Base URL (prod/local)
 // ----------------------
-
+// 이 loadBaseUrl 은 개발, 운영 둘 다 존재
+/*
 async function loadBaseUrl() {
   return new Promise((resolve) => {
     chrome.storage.sync.get(["lexinoaBaseUrl"], (data) => {
@@ -428,6 +429,14 @@ async function loadBaseUrl() {
     });
   });
 }
+*/
+// 이 loadBaseUrl 은 운영 전용
+async function loadBaseUrl() {
+  STATE.baseUrl = "https://www.lexinoa.com";
+  // 혹시 남아있는 로컬 설정값이 있으면 제거(선택)
+  chrome.storage.sync.remove(["lexinoaBaseUrl"], () => {});
+}
+
 
 function renderEnvRadios() {
   const prod = document.querySelector('input[name="env"][value="prod"]');
@@ -441,6 +450,8 @@ function renderEnvRadios() {
   }
 }
 
+// 운영/로컬 변경 핸들러 (배포 시 운영 고정)
+/*
 function onEnvChange(e) {
   const val = e.target.value;
   if (val === "local") {
@@ -457,6 +468,23 @@ function onEnvChange(e) {
     });
   });
 }
+*/
+// 운영/로컬 변경 핸들러 (배포 시 운영 고정) --- END ---
+function onEnvChange(e) {
+  // 운영 고정
+  STATE.baseUrl = "https://www.lexinoa.com";
+  chrome.storage.sync.remove(["lexinoaBaseUrl"], () => {
+    renderEnvRadios();
+    // 기존 흐름 유지(새로고침만 수행)
+    refreshAuthStatus().then(() => {
+      refreshUsage().then(() => {
+        updateStatusBar();
+        renderSettingsAuth();
+      });
+    });
+  });
+}
+
 
 // ----------------------
 // 컨텍스트 (상황 감지)
@@ -1103,7 +1131,7 @@ async function refreshTemplatesView() {
         {
           lexinoaSelectionDefaults: newDefaults,
           lexinoaSelectionTemplateTitle: "드래그 영역 다듬기 기본값",
-          lexinoaSelectionTemplateId: 0 // ✅ Free/Guest는 템플릿 기반 선택이 아니므로 초기화
+          lexinoaSelectionTemplateId: 0 // Free/Guest는 템플릿 기반 선택이 아니므로 초기화
         },
         () => {
           alert("드래그 영역 다듬기 기본값이 저장되었습니다.");
