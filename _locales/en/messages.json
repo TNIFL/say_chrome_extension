@@ -1,0 +1,181 @@
+{
+  "extName": { "message": "Lexinoa Rewrite Helper" },
+  "extDesc": { "message": "A browser extension that rewrites sentences with Lexinoa." },
+  "extTitle": { "message": "Lexinoa" },
+
+  "popupPageTitle": { "message": "Lexinoa Extension" },
+  "popupSubtitle": { "message": "Rewrite Helper" },
+  "openWeb": { "message": "Open Web" },
+
+  "tierGuest": { "message": "Guest" },
+  "tierFree": { "message": "Free" },
+  "tierPro": { "message": "Pro" },
+
+  "statusLoading": { "message": "Loading usage..." },
+  "statusUsageUnavailable": { "message": "Unable to load usage information." },
+  "statusUsageFormat": { "message": "Total $1 / $2 left" },
+
+  "tabRewrite": { "message": "Rewrite" },
+  "tabHistory": { "message": "History" },
+  "tabTemplates": { "message": "Templates" },
+  "tabSettings": { "message": "Settings" },
+
+  "contextDetect": { "message": "Platform" },
+  "contextGeneric": { "message": "General site" },
+  "contextAuto": { "message": "Auto" },
+  "contextGmail": { "message": "Gmail" },
+  "contextSlack": { "message": "Slack" },
+  "contextNaverMail": { "message": "Naver Mail" },
+  "contextOutlook": { "message": "Outlook" },
+  "contextTeams": { "message": "Teams" },
+  "contextKakao": { "message": "Kakao" },
+  "contextGenericOption": { "message": "General" },
+
+  "fieldInput": { "message": "Input" },
+  "inputPlaceholder": { "message": "e.g) Please send it on time next time." },
+
+  "fieldCategory": { "message": "Category" },
+  "categorySelectPlaceholder": { "message": "Select a category..." },
+  "catGeneral": { "message": "General" },
+  "catWork": { "message": "Work" },
+  "catSupport": { "message": "Customer support" },
+  "catApology": { "message": "Apology" },
+  "catInquiry": { "message": "Inquiry" },
+  "catThanks": { "message": "Thanks" },
+  "catRequest": { "message": "Request" },
+  "catGuidance": { "message": "Guidance" },
+  "catReport": { "message": "Report/Approval" },
+  "catFeedback": { "message": "Feedback" },
+
+  "fieldTone": { "message": "Tone" },
+  "toneSelectPlaceholder": { "message": "Select a tone..." },
+  "toneSoft": { "message": "Softer" },
+  "tonePolite": { "message": "Polite" },
+  "toneConcise": { "message": "Concise" },
+  "toneReport": { "message": "Report style" },
+  "toneFriendly": { "message": "Friendly" },
+  "toneWarmly": { "message": "Warm" },
+  "toneCalmly": { "message": "Calm" },
+  "toneFormally": { "message": "Formal" },
+  "toneClearly": { "message": "Clear" },
+  "toneNoEmotion": { "message": "No emotion" },
+
+  "optHonorific": { "message": "Keep honorifics" },
+  "optOpener": { "message": "Add softener/greeting" },
+  "optEmoji": { "message": "Allow emojis 🙂" },
+
+  "templateLabel": { "message": "Template" },
+  "proBadge": { "message": "Pro" },
+
+  "templateSelectPlaceholder": { "message": "Select a template..." },
+  "templateSelectPlaceholderPro": { "message": "Select a template…" },
+  "templateProOnly": { "message": "Templates available on Pro" },
+  "templateProOnlyInline": { "message": "Templates available on Pro" },
+
+  "templateSaveCurrent": { "message": "Save current" },
+
+  "hintChipRemove": { "message": "Click a selected chip to remove it." },
+  "rewriteBtn": { "message": "Rewrite" },
+
+  "outputLabel": { "message": "Result" },
+
+  "historyProInfo": { "message": "Pro subscribers can view recent history." },
+  "templatesProInfo": { "message": "Pro subscribers can save category/tone/options as templates." },
+
+  "templateNameLabel": { "message": "Template name" },
+  "templateNamePlaceholder": { "message": "e.g) Work - polite & calm" },
+  "noneOption": { "message": "None" },
+
+  "tplHonorific": { "message": "Honorifics" },
+  "tplOpener": { "message": "Softener/Greeting" },
+  "tplEmoji": { "message": "Emoji" },
+
+  "loginStatusTitle": { "message": "Login status" },
+  "authChecking": { "message": "Checking..." },
+  "openLoginWeb": { "message": "Open login page on web" },
+
+  "themeTitle": { "message": "Theme" },
+  "themeLight": { "message": "Light" },
+  "themeDark": { "message": "Dark" },
+  "themeHint": { "message": "Switch between light/dark mode similar to the website." },
+
+  "serverTargetTitle": { "message": "Target server" },
+  "serverProd": { "message": "Production (https://www.lexinoa.com)" },
+  "serverLocal": { "message": "Local (http://127.0.0.1:5000)" },
+  "serverHint": { "message": "Choose Local only when testing locally." },
+
+  "extensionDataTitle": { "message": "Extension data" },
+  "resetBtn": { "message": "Reset context / internal settings" },
+
+  "accountConnect": { "message": "Account" },
+  "accountLabel": { "message": "Account" },
+
+  "connChecking": { "message": "Checking connection..." },
+  "connectBtn": { "message": "Connect" },
+  "disconnectBtn": { "message": "Disconnect" },
+
+  "errNeedInput": { "message": "Please enter a sentence." },
+  "errRequestFailed": { "message": "An error occurred while processing the request." },
+  "errDailyLimit": { "message": "Daily limit ($1) exceeded." },
+  "errMonthlyLimit": { "message": "Monthly limit ($1) exceeded." },
+  "errNeedLogin": { "message": "Login required. Please log in on the web and try again." },
+
+  "noteCompareCount": { "message": "Compare $1 versions." },
+  "noteProUpTo3": { "message": "Pro can generate up to 3 versions." },
+  "resultTitle": { "message": "Result $1" },
+  "btnCopy": { "message": "Copy" },
+
+  "templatesHelpText": { "message": "Save frequent settings as templates and load them quickly." },
+  "templatesEmpty": { "message": "No saved templates." },
+
+  "historyHelpText": { "message": "Recent history. Click to load into the input." },
+  "historyEmpty": { "message": "No history." },
+  "errHistoryLoad": { "message": "Failed to load history." },
+
+  "selectionDefaultsTitle": { "message": "Selection defaults (1)" },
+  "btnSaveWithThisSettings": { "message": "Save these settings" },
+  "btnApply": { "message": "Apply" },
+  "btnDelete": { "message": "Delete" },
+  "btnLoadThisSentence": { "message": "Load this sentence" },
+  "btnLoadSentence": { "message": "Load this sentence" },
+
+  "btnUseAsSelectionDefault": { "message": "Default" },
+  "btnUseAsSelectionDefaultChecked": { "message": "Default ✓" },
+
+  "metaNoCategory": { "message": "No category" },
+  "metaNoTone": { "message": "No tone" },
+  "metaNoOptions": { "message": "No options" },
+
+  "optHonorificShort": { "message": "Honorifics" },
+  "optOpenerShort": { "message": "Softener/Greeting" },
+  "optEmojiShort": { "message": "Emoji" },
+
+  "connConnected": { "message": "Connected" },
+  "connDisconnected": { "message": "Not connected" },
+
+  "alertProContext": { "message": "Auto-detect is available on Pro." },
+  "alertTemplateProOnly": { "message": "Saving templates is Pro-only." },
+  "alertNeedTemplateName": { "message": "Please enter a template name." },
+  "alertTemplateSaved": { "message": "Template saved." },
+  "alertTemplateSaveError": { "message": "Failed to save template." },
+  "alertTemplateApplied": { "message": "Template applied to the input." },
+  "confirmDeleteTemplate": { "message": "Delete this template?" },
+  "alertDeleteError": { "message": "Failed to delete." },
+
+  "alertAccountConnected": { "message": "Lexinoa account connected." },
+  "alertDisconnected": { "message": "Disconnected." },
+
+  "ctxGenericLabel": { "message": "General site" },
+  "ctxNaverMailLabel": { "message": "Naver Mail" },
+  "ctxGmailLabel": { "message": "Gmail" },
+  "ctxSlackLabel": { "message": "Slack" },
+  "ctxOutlookLabel": { "message": "Outlook" },
+  "ctxTeamsLabel": { "message": "Teams" },
+  "ctxKakaoLabel": { "message": "Kakao" },
+
+  "verifiedYes": { "message": "Verified" },
+  "verifiedNo": { "message": "Verification needed" },
+
+  "tplDefaultMetaFormat": { "message": "$1 · $2 · $3" },
+  "tplMetaFormat": { "message": "$1 · $2 · $3" }
+}

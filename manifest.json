@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Lexinoa 문장 순화 도우미",
-  "description": "Lexinoa 웹 서비스와 연동되는 문장 순화 / 상황별 말투 도우미 확장 프로그램입니다.",
-  "version": "1.0.0",
+  "default_locale": "ko",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDesc__",
+  "version": "1.1.0",
 
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Lexinoa"
+    "default_title": "__MSG_extTitle__"
   },
 
   "icons": {
@@ -25,7 +26,8 @@
   ],
 
   "host_permissions": [
-    "https://www.lexinoa.com/*"
+    "https://www.lexinoa.com/*",
+    "http://127.0.0.1:5000/*"
   ],
 
   "background": {

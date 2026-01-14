@@ -1,0 +1,195 @@
+{
+  "extName": { "message": "Lexinoa 문장 순화 도우미" },
+  "extDesc": { "message": "Lexinoa 웹 서비스와 연동되는 문장 순화 / 상황별 말투 도우미 확장 프로그램입니다." },
+  "extTitle": { "message": "Lexinoa" },
+
+  "popupPageTitle": { "message": "Lexinoa 확장 프로그램" },
+  "popupSubtitle": { "message": "문장 순화 도우미" },
+  "openWeb": { "message": "웹 열기" },
+
+  "tierGuest": { "message": "Guest" },
+  "tierFree": { "message": "Free" },
+  "tierPro": { "message": "Pro" },
+
+  "statusLoading": { "message": "사용량 불러오는 중..." },
+  "statusUsageUnavailable": { "message": "이용량 정보를 불러올 수 없습니다." },
+  "statusUsageFormat": { "message": "총 $1회 / $2회 남음" },
+
+  "tabRewrite": { "message": "순화" },
+  "tabHistory": { "message": "히스토리" },
+  "tabTemplates": { "message": "템플릿" },
+  "tabSettings": { "message": "설정" },
+
+  "contextDetect": { "message": "플랫폼 감지" },
+  "contextGeneric": { "message": "일반 사이트" },
+  "contextAuto": { "message": "자동" },
+  "contextGmail": { "message": "Gmail" },
+  "contextSlack": { "message": "Slack" },
+  "contextNaverMail": { "message": "네이버 메일" },
+  "contextOutlook": { "message": "Outlook" },
+  "contextTeams": { "message": "Teams" },
+  "contextKakao": { "message": "카카오톡/카카오" },
+  "contextGenericOption": { "message": "일반" },
+
+  "fieldInput": { "message": "입력" },
+  "inputPlaceholder": { "message": "예) 왜 이렇게 늦게 보내세요? 다음부턴 제때 보내세요." },
+
+  "fieldCategory": { "message": "카테고리" },
+  "categorySelectPlaceholder": { "message": "카테고리 선택…" },
+  "catGeneral": { "message": "일반" },
+  "catWork": { "message": "업무" },
+  "catSupport": { "message": "고객응대" },
+  "catApology": { "message": "사과" },
+  "catInquiry": { "message": "문의" },
+  "catThanks": { "message": "감사" },
+  "catRequest": { "message": "요청" },
+  "catGuidance": { "message": "안내" },
+  "catReport": { "message": "보고/결재" },
+  "catFeedback": { "message": "피드백" },
+
+  "fieldTone": { "message": "톤" },
+  "toneSelectPlaceholder": { "message": "말투 선택…" },
+  "toneSoft": { "message": "부드럽게" },
+  "tonePolite": { "message": "정중하게" },
+  "toneConcise": { "message": "간결하게" },
+  "toneReport": { "message": "보고서체" },
+  "toneFriendly": { "message": "친근하게" },
+  "toneWarmly": { "message": "따뜻하게" },
+  "toneCalmly": { "message": "차분하게" },
+  "toneFormally": { "message": "격식 있게" },
+  "toneClearly": { "message": "명확하게" },
+  "toneNoEmotion": { "message": "감정 없이" },
+
+  "optHonorific": { "message": "존댓말 유지" },
+  "optOpener": { "message": "완충문·인사 추가" },
+  "optEmoji": { "message": "이모지 허용 🙂" },
+
+  "templateLabel": { "message": "템플릿" },
+  "proBadge": { "message": "Pro" },
+  "templateSelectPlaceholder": { "message": "템플릿 선택…" },
+  "templateProOnly": { "message": "Pro에서 템플릿 사용 가능" },
+  "templateSaveCurrent": { "message": "현재 설정 저장" },
+
+  "hintChipRemove": { "message": "※ 선택한 칩을 클릭하면 제거됩니다." },
+  "rewriteBtn": { "message": "순화하기" },
+
+  "outputLabel": { "message": "결과" },
+
+  "historyProInfo": { "message": "Pro 구독 시 최근 순화 기록을 확인할 수 있습니다." },
+  "templatesProInfo": { "message": "Pro 구독 시 카테고리·톤·옵션을 템플릿으로 저장해 둘 수 있습니다." },
+
+  "templateNameLabel": { "message": "템플릿 이름" },
+  "templateNamePlaceholder": { "message": "예: 업무용 정중·차분" },
+  "noneOption": { "message": "선택 없음" },
+
+  "tplHonorific": { "message": "존댓말" },
+  "tplOpener": { "message": "완충문·인사" },
+  "tplEmoji": { "message": "이모지" },
+
+  "loginStatusTitle": { "message": "로그인 상태" },
+  "authChecking": { "message": "상태 확인 중..." },
+  "openLoginWeb": { "message": "웹에서 로그인 페이지 열기" },
+
+  "themeTitle": { "message": "테마" },
+  "themeLight": { "message": "라이트 모드" },
+  "themeDark": { "message": "다크 모드" },
+  "themeHint": { "message": "웹사이트 느낌과 비슷하게, 밝은/어두운 모드를 전환할 수 있어요." },
+
+  "serverTargetTitle": { "message": "연결 대상 서버" },
+  "serverProd": { "message": "운영 서버 (https://www.lexinoa.com)" },
+  "serverLocal": { "message": "로컬 개발 (http://127.0.0.1:5000)" },
+  "serverHint": { "message": "로컬에서 테스트할 때만 \"로컬 개발\"을 선택하세요." },
+
+  "extensionDataTitle": { "message": "확장 데이터" },
+  "resetBtn": { "message": "컨텍스트 / 내부 설정 초기화" },
+
+  "accountConnect": { "message": "계정 연결" },
+  "connChecking": { "message": "연결 상태 확인 중..." },
+  "connectBtn": { "message": "연결" },
+  "disconnectBtn": { "message": "해제" },
+
+  "errNeedInput": { "message": "입력할 문장을 적어주세요." },
+  "errRequestFailed": { "message": "요청 중 오류가 발생했습니다." },
+  "errDailyLimit": { "message": "일일 사용 한도($1)를 초과했습니다." },
+  "errMonthlyLimit": { "message": "월간 사용 한도($1)를 초과했습니다." },
+  "errNeedLogin": { "message": "로그인이 필요합니다. 웹에서 로그인 후 다시 시도해 주세요." },
+
+  "noteCompareCount": { "message": "$1개 문장을 비교해 보세요." },
+  "noteProUpTo3": { "message": "Pro에서는 최대 3개 문장을 비교할 수 있습니다." },
+  "resultTitle": { "message": "결과 $1" },
+  "btnCopy": { "message": "복사" },
+
+  "templatesHelpText": { "message": "자주 쓰는 설정을 템플릿으로 저장해 두고, 빠르게 불러올 수 있습니다." },
+  "templatesEmpty": { "message": "저장된 템플릿이 없습니다." },
+
+  "historyHelpText": { "message": "최근 순화 기록입니다. 클릭해서 입력창에 불러올 수 있습니다." },
+  "historyEmpty": { "message": "히스토리가 없습니다." },
+  "errHistoryLoad": { "message": "히스토리를 불러오는 중 오류가 발생했습니다." },
+
+  "selectionDefaultsTitle": { "message": "드래그 영역 다듬기 기본값 (1개)" },
+  "btnSaveWithThisSettings": { "message": "이 설정으로 저장" },
+  "btnApply": { "message": "적용" },
+  "btnDelete": { "message": "삭제" },
+  "btnLoadThisSentence": { "message": "이 문장 불러오기" },
+
+  "optHonorificShort": { "message": "존댓말" },
+  "optOpenerShort": { "message": "완충문·인사" },
+
+  "connConnected": { "message": "연결됨" },
+  "connDisconnected": { "message": "미연결" },
+
+  "alertProContext": { "message": "상황 자동 감지는 Pro 구독 시 사용 가능합니다." },
+  "alertTemplateProOnly": { "message": "템플릿 저장은 Pro에서만 가능합니다." },
+  "alertNeedTemplateName": { "message": "템플릿 이름을 입력해 주세요." },
+  "alertTemplateSaved": { "message": "템플릿이 저장되었습니다." },
+  "alertTemplateSaveError": { "message": "템플릿 저장 중 오류가 발생했습니다." },
+  "alertTemplateApplied": { "message": "현재 입력창에 템플릿이 적용되었습니다." },
+  "confirmDeleteTemplate": { "message": "이 템플릿을 삭제하시겠습니까?" },
+  "alertDeleteError": { "message": "삭제 중 오류가 발생했습니다." },
+
+  "alertAccountConnected": { "message": "Lexinoa 계정 연결이 완료되었습니다." },
+  "alertDisconnected": { "message": "연결이 해제되었습니다." }
+,
+  "ctxGenericLabel": { "message": "일반 사이트" },
+  "ctxNaverMailLabel": { "message": "네이버 메일" },
+  "ctxGmailLabel": { "message": "Gmail 메일" },
+  "ctxSlackLabel": { "message": "Slack 채팅" },
+  "ctxOutlookLabel": { "message": "Outlook 메일" },
+  "ctxTeamsLabel": { "message": "Microsoft Teams" },
+  "ctxKakaoLabel": { "message": "카카오톡/카카오" },
+
+  "templateSelectPlaceholderPro": { "message": "템플릿 선택…" },
+  "templateProOnlyInline": { "message": "Pro에서 템플릿 사용 가능" },
+
+  "historyHelpText": { "message": "최근 순화 기록입니다. 클릭해서 입력창에 불러올 수 있습니다." },
+  "btnLoadSentence": { "message": "이 문장 불러오기" },
+
+  "templatesHelpText": { "message": "자주 쓰는 설정을 템플릿으로 저장해 두고, 빠르게 불러올 수 있습니다." },
+
+  "btnApply": { "message": "적용" },
+  "btnUseAsSelectionDefault": { "message": "드래그 기본값으로" },
+  "btnUseAsSelectionDefaultChecked": { "message": "드래그 기본값 ✓" },
+  "btnDelete": { "message": "삭제" },
+
+  "confirmDeleteTemplate": { "message": "이 템플릿을 삭제하시겠습니까?" },
+
+  "metaNoCategory": { "message": "카테고리 없음" },
+  "metaNoTone": { "message": "톤 없음" },
+  "metaNoOptions": { "message": "추가 옵션 없음" },
+
+  "optHonorificShort": { "message": "존댓말" },
+  "optOpenerShort": { "message": "완충문" },
+  "optEmojiShort": { "message": "이모지" },
+
+  "accountLabel": { "message": "계정" },
+  "connConnected": { "message": "연결됨" },
+  "connDisconnected": { "message": "미연결" },
+
+  "loginStatusTitle": { "message": "로그인 상태" },
+  "verifiedYes": { "message": "인증 완료" },
+  "verifiedNo": { "message": "인증 필요" },
+
+  "tplDefaultMetaFormat": { "message": "$1 · $2 · $3" },
+  "tplMetaFormat": { "message": "$1 · $2 · $3" }
+
+}

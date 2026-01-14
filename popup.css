@@ -721,3 +721,35 @@ body, .tpl-item, .tpl-meta, .history-body, .info-text, .field-label {
   border-color: var(--inner-btn-border-hover);
   color: var(--inner-btn-text-hover);
 }
+
+/* Templates: force single-line header with natural truncation */
+.tpl-header{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.tpl-header > :first-child{
+  flex:1 1 auto;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space:nowrap;     
+}
+
+.tpl-actions{
+  flex:0 0 auto;
+  display:flex;
+  gap:6px;
+  align-items:center;
+  white-space:nowrap;
+}
+
+/* Compact buttons to fit in popup width */
+.tpl-actions .btn{
+  padding:4px 8px;
+  font-size:12px;
+  line-height:1;
+  white-space:nowrap;
+}
+
